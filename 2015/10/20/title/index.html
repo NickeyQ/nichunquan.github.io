@@ -16,9 +16,13 @@
   
   
   
-    <meta name="description" content="">
+    <meta name="description" content="这应该是一道公认的机器学习类比赛的入门题。特征工程大部分时候被认为是这类竞赛的关键部分，本文也会使用一些常用的方法去进行原始数据的处理，然后去提取特征，之后分别使用逻辑斯蒂回归，随机森林，梯度提升决策树，以及梯度提升决策树的变种xgboost.在选择参数的时候本文使用了网格搜索和交叉验证的方法, 使用python进行了整个处理过程
+
+
+
+$$x=\frac{-b\pm\sqrt{b^2-4a...">
   
-  <title> [ nichunquan ]</title>
+  <title>kaggle比赛之Titanic沉船事件 [ nichunquan ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -34,56 +38,154 @@
   
 </head>
 
-<div class="random-center hide-area">
-  <div id="random-index">
-    <div class="center-field">
-      <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg" width=120 height=120 onClick="openUserCard()">
+<body>
+<div class="side-navigate hide-area">
+  
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg"/>
+          <div id="homelink">nichunquan</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
     </div>
-    <div class="center-field">
-      <div class="title" onClick="openUserCard()">nichunquan</div>
-      <div class="sub-title" onClick="openUserCard()"></div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="post">
+    <h1>kaggle比赛之Titanic沉船事件</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">Created at 2015-10-20</span>
+      
+        <span id = "post-title-updated">Updated at 2017-03-13</span>
+      
+      
+      <span id = "post-title-categories">Category
+      
+      
+        
+        
+        <a href="/categories/machine-learning/">machine learning</a>
+      
+      </span>
+      
+      
+      <span id = "post-title-tags">
+      Tag
+      
+      
+        
+        
+        <a href="/tags/machine-learning/">machine learning</a>
+      
+      </span>
+      
+    </p>
+    
+    <p>这应该是一道公认的机器学习类比赛的入门题。特征工程大部分时候被认为是这类竞赛的关键部分，本文也会使用一些常用的方法去进行原始数据的处理，然后去提取特征，之后分别使用逻辑斯蒂回归，随机森林，梯度提升决策树，以及梯度提升决策树的变种xgboost.在选择参数的时候本文使用了网格搜索和交叉验证的方法, 使用python进行了整个处理过程</p>
+<p><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+<p>\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>
+
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <div class="random-toc">
+    <h2>Table of Content</h2>
+    
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+
+  
+
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+      
+      
+      
     </div>
-    <hr >
-    <div class="center-field">
-      <ul class="index-nav-link">
-        
-        
-          
-            <li><a href="/index.html">Home</a></li>
-          
-        
-          
-            <li><a href="/archives">Archives</a></li>
-          
-        
-          
-            <li><a href="/tags">Tags</a></li>
-          
-        
-          
-            <li><a href="/categories">Categories</a></li>
-          
-        
-          
-            <li><a href="/about">About</a></li>
-          
-        
-      </ul>
-      <ul class="social-icon">
-  
-  
-    <li>
-      <a href="http://weibo.com/cccober">
-        
-          <i class="icon iconfont weibo">&#xe602;</i>
-        
-      </a>
-    </li>
-  
-</ul>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by nichunquan using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
     </div>
   </div>
 </div>
+
+</div>
+
+
+
 <div id="user-card">
   <div class="center-field">
     <img class="avatar" src="http://7te9fe.com1.z0.glb.clouddn.com/default_avatar.jpg">
@@ -170,6 +272,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "34495E";
